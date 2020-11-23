@@ -1,18 +1,13 @@
 .content {
-  display: flex;
-  justify-content: center;
-
   background-color: #ffff;
 
   &__catalog {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $widthCard);
+    column-gap: $cardColumnGap;
+    row-gap: 50px;
     justify-content: center;
-    max-width: $cardsNumderOnRow * $widthCard + $cardGap * $cardsNumderOnRow;
-    margin-top: 50px;
-  }
-
-  &__product {
-    margin: 0 $cardGap / 2 50px;
+    max-width: $cardsNumderOnRow * $widthCard + $cardColumnGap * 3;
+    margin: 50px auto;
   }
 }

@@ -1,10 +1,11 @@
 .nav {
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    column-gap: 20px;
   }
 
   &__item {
-    margin-left: 20px;
     list-style: none;
   }
 
