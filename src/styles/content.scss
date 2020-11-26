@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: $cardsNumderOnRow * $widthCard + $cardGap * $cardsNumderOnRow;
-    margin-top: 50px;
   }
 
   &__product {
